@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
-import Footer from "../components/Footer"
-import "../styles/_Error.scss"
+import Footer from "../components/Footer";
+import "../styles/_Error.scss";
 
 function Error() {
   return (

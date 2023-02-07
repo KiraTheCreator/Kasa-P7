@@ -1,7 +1,7 @@
 import React from "react";
 import BannerAbout from "../components/BannerAbout";
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function About() {
     return (
