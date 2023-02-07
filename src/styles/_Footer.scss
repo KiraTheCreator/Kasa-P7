@@ -1,0 +1,36 @@
+@import "./bases";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    font-family: $primary-font;
+    width: auto;
+    margin-left: -100px;
+    margin-right: -100px;
+    &__logo {
+        margin: 25px 0 0 0;
+    }
+    &__text {
+        color: #fff;
+        margin: 20px 0 0 0;
+        font-size: $nav-text-size;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        width: auto;
+        margin: 0 -20px;
+        &__logo {
+            margin: 0;
+        }
+        &__text {
+            font-size: $nav-text-size-responsive;
+        }
+    }
+}

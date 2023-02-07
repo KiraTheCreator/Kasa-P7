@@ -2,6 +2,7 @@
 
 $primary-color: #FF6060;
 $nav-text-size: 24px;
+$nav-text-size-responsive: 12px;
 $primary-font: "Montserrat", sans-serif;
 
 * {
@@ -9,9 +10,18 @@ $primary-font: "Montserrat", sans-serif;
 };
 
 body {
-    margin: 55px 100px;
+    margin: 0;
 }
 
+#root {
+margin: 40px 100px 0 100px;
+}
+
+@media screen and (max-width: 768px) {
+  #root {
+    margin: 20px 20px 0 20px;
+  }
+}
   
   
   

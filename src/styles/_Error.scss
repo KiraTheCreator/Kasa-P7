@@ -7,8 +7,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 160px;
         &__title {
-        font-size: 270px;
+        font-size: 280px;
         font-weight: 700;
         margin: 50px 0 0 0;
         }
@@ -16,6 +17,8 @@
         font-size: 36px; 
         font-weight: 500;
         margin: 40px 0 0 0;
+        text-align: center;
+        flex-wrap: wrap;
         }
         &__link {
         font-size: 18px;
@@ -27,4 +30,18 @@
                 text-decoration: underline;
             }
         }
+}
+
+@media screen and (max-width: 768px) {
+    .error-contener {
+        &__title {
+            font-size: 96px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
 }

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     &__nav {
         display: flex;
         padding: 0;
@@ -22,3 +22,20 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+        .header {
+            margin-bottom: 20px;
+            align-items: center;
+          &__logo {
+            width: 130px;
+          }
+          &__nav {
+            margin: 0;
+            &--link {
+                font-size: $nav-text-size-responsive;
+                margin: 0 0 0 15px;
+            }
+          }
+        }
+    }
