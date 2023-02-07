@@ -1,0 +1,30 @@
+@import "./_bases";
+
+.error-contener {
+    color: $primary-color;
+    font-family: $primary-font;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        &__title {
+        font-size: 270px;
+        font-weight: 700;
+        margin: 50px 0 0 0;
+        }
+        &__subtitle {
+        font-size: 36px; 
+        font-weight: 500;
+        margin: 40px 0 0 0;
+        }
+        &__link {
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        margin: 180px 0 0 0;
+        color: $primary-color;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+}
