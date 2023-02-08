@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import housingdata from "../datas/housingdata.json";
-
+import "../styles/_Card.scss"
 
 function Card() {
   const data = housingdata
@@ -8,20 +8,17 @@ function Card() {
 
   return (
     <section className="housing-contener">
-      {data.map((elem) => {
-        return (
+      {
+        data.map((elem) => (
           <article
             key={elem.id}
-            className="housing-contener__card"
-            onClick={() => navigate(`logement/${elem.id}`)}
-            style={{ backgroundImage: `url(${elem.cover})` }}
-          >
-            <div className="housing-contener__card--filter">
-              <h2 className="housing-contener__card--title">{elem.title}</h2>
-            </div>
+            className="housing-card"
+            onClick={() => navigate(`logement/${elem.id}`)}>
+            <h2 className="housing-card__title">{elem.title}</h2>
+            <div className={`filter ${"housing-card__img"}`}><img src={elem.cover} className="housing-card__img" alt={elem.title} /></div>
           </article>
-        )
-      })}
+        ))
+      }
     </section>
   )
 }
