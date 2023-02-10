@@ -1,0 +1,45 @@
+@import "../bases";
+
+.host-contener {
+    display: flex;
+    flex-direction: column;
+}
+.host {
+    display: flex;
+    &__name {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $primary-font;
+        color: $primary-color;
+        height: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        &--n, &--ln {
+            margin: 5px;
+        }
+    }
+    &__picture {
+        height: 64px;
+        width: 64px;
+        border-radius: 50px;
+        background-size: contain;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .host {
+        align-items: center;
+        &__name {
+            font-size: 14px;
+            &--n, &--ln {
+            margin: 1px;
+        }
+        }
+        &__picture {
+            height: 32px;
+            width: 32px;
+        }
+}}

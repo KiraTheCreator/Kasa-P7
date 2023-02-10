@@ -1,0 +1,31 @@
+@import "../bases";
+
+.housing-title {
+    
+    &__title {
+        font-size: 36px;
+        font-family: $primary-font;
+        color: $primary-color;
+        font-weight: 500;
+        margin: 0;
+    }
+    &__location {
+        font-size: 18px;
+        font-family: $primary-font;
+        color: $primary-color;
+        font-weight: 500;
+        margin: 10px 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .housing-title {
+        &__title {
+            font-size: 18px;
+        }
+        &__location {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+    }
+}

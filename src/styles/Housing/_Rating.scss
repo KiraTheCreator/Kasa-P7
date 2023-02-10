@@ -1,0 +1,12 @@
+.rating__star {
+    margin-top:  25px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+.rating__star {
+    margin-top: 20px;
+    width: 25px;
+    height: 25px;
+}
+}

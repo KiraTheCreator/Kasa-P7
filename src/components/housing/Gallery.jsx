@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import housingdata from "../datas/housingdata.json";
-import arrowLeft from "../assets/arrowleft.png";
-import arrowRight from "../assets/arrowright.png";
-import "../styles/_Gallery.scss";
+import housingdata from "../../datas/housingdata.json";
+import arrowLeft from "../../assets/arrowleft.png";
+import arrowRight from "../../assets/arrowright.png";
+import "../../styles/_Gallery.scss";
 
 function Gallery() {
 

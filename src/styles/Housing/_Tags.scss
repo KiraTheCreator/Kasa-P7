@@ -1,0 +1,36 @@
+@import "../bases";
+
+.housing-tags {
+    display: flex;
+    margin-top: 35px;
+    &__contener {
+      &__span {
+        display: inline-block;
+        flex-direction: row;
+        width: auto;
+        height: 25px;
+        color: #FFF;
+        font-family: $primary-font;
+        font-size: 14px;
+        font-weight: 400;
+        background-color: $primary-color;
+        border-radius: 10px;
+        padding: 4px 20px;
+        margin-right: 10px;
+        word-wrap: break-word;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .housing-tags {
+      margin-top: 0;
+      flex-wrap: wrap;
+      &__contener__span {
+        width: auto;
+        height: 18px;
+        font-size: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }

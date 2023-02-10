@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/_Banner.scss";
-import bannerabout from "../assets/bannerabout.png";
+import "../../styles/_Banner.scss";
+import bannerabout from "../../assets/bannerabout.png";
 
 function BannerAbout() {
     return (

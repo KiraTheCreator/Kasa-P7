@@ -46,8 +46,20 @@
     }
 }
 
+@media screen and (max-width: 998px) {
+    .gallery {
+        height: 255px;
+    }
+}
 @media screen and (max-width: 768px) {
     .gallery {
+        &__text {
+            display: none;
+        }
     height: 255px;
+    &__icon__btn img {
+        width: 12px;
+        height: 20px;
+    }
     }
 }
