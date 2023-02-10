@@ -49,6 +49,10 @@
 @media screen and (max-width: 998px) {
     .gallery {
         height: 255px;
+        &__icon__btn img {
+            width: 24px;
+            height: 40px;
+        }
     }
 }
 @media screen and (max-width: 768px) {
