@@ -1,4 +1,4 @@
-@import "../bases";
+@import "../_bases";
 
 .host-contener {
     display: flex;
@@ -32,6 +32,7 @@
 @media screen and (max-width: 768px) {
     .host {
         align-items: center;
+        margin-bottom: 0;
         &__name {
             font-size: 14px;
             &--n, &--ln {
@@ -39,7 +40,8 @@
         }
         }
         &__picture {
-            height: 32px;
-            width: 32px;
+            height: 35px;
+            width: 35px;
         }
-}}
+}
+}

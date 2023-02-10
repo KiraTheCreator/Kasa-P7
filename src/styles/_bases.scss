@@ -7,18 +7,23 @@ $nav-text-size-responsive: 12px;
 $card-text-size: 18px;
 $tags-text-size: 14px;
 $tags-text-size-responsive: 10px;
+$collapse-housing: 18px;
 $primary-font: "Montserrat", sans-serif;
 $border-radius: 25px;
 
 * {
     box-sizing: border-box;
 };
-
+html {
+  height: 100vh;
+}
 body {
-    margin: 0;
+  margin: 0;
+  height: 100%;
 }
 
 #root {
+height: 100%;
 margin: 40px 100px 0 100px;
 }
 

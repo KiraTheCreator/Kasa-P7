@@ -1,21 +1,37 @@
-import housingdata from "../../datas/housingdata.json";
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import arrowup from "../../assets/arrowup.png";
+import arrowdown from "../../assets/arrowdown.png";
+import "../../styles/utils/_Collapse.scss"
 
-function Collapse({ key = "description" }) {
-  const data = housingdata;
-  const { id } = useParams();
-  const currentLodgment = data.find((lodgment) => lodgment.id === id);
-  const [isCollapsed, setIsCollapsed] = useState(true);
+function Collapse({ title, content, className }) {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
-      <button onClick={() => setIsCollapsed(!isCollapsed)}>
-        {isCollapsed ? "Afficher" : "Masquer"}
-      </button>
-      {!isCollapsed && currentLodgment && (
-        <div>
-            <p>{currentLodgment[key]}</p>
+    <div className={"collapse " + className}>
+      <div className="collapse__header" onClick={() => setIsOpen(!isOpen)}>
+        <h3 className="collapse__header__btn" onClick={() => setIsOpen(!isOpen)}>
+          {title}
+        </h3>
+        <img
+          src={isOpen ? arrowup : arrowdown}
+          className="collapse__header__arrow"
+          alt={isOpen ? "Fermer" : "Ouvrir"}
+          onClick={() => setIsOpen(!isOpen)}
+        />
+      </div>
+      {isOpen && (
+        <div className="collapse__content">
+          {typeof content === "string" ? (
+            <p className="collapse__content__text">{content}</p>
+          ) : Array.isArray(content) || typeof content === "object" ? (
+            <ul className="collapse__content__list">
+              {Object.keys(content).map(key => (
+                <li key={key} className="collapse__content__list__item">
+                  {content[key]}
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </div>
       )}
     </div>
@@ -23,5 +39,3 @@ function Collapse({ key = "description" }) {
 }
 
 export default Collapse;
-
-

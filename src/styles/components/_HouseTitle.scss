@@ -1,7 +1,6 @@
 .housing-title-contener {
     display: flex;
     justify-content: space-between;
-    // align-items: flex-end;
     margin-top: 30px;
   }
 
@@ -20,6 +19,11 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
     margin-top: 0;
-}}}
+    .host {
+      margin-bottom: 15px;
+    }
+}}
+}
   
