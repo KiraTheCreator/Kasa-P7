@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import housingdata from "../../datas/housingdata.json";
 import arrowLeft from "../../assets/arrowleft.png";
 import arrowRight from "../../assets/arrowright.png";
-import "../../styles/_Gallery.scss";
+import "../../styles/components/_Gallery.scss";
 
 function Gallery() {
 

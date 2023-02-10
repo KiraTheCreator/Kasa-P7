@@ -1,7 +1,7 @@
 import housingdata from "../../datas/housingdata.json";
 import React from "react";
 import { useParams } from "react-router-dom";
-import "../../styles/Housing/_Title.scss"
+import "../../styles/components/_Location.scss"
 
 
 function HousingTitle() {

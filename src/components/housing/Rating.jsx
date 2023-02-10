@@ -3,7 +3,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import fullstar from "../../assets/fullstar.png";
 import star from "../../assets/star.png";
-import "../../styles/Housing/_Rating.scss"
+import "../../styles/components/_Rating.scss"
 
 function Rating() {
   const data = housingdata;

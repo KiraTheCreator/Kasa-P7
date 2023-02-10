@@ -3,7 +3,7 @@ import Location from "../housing/Location";
 import Tags from "../housing/Tags";
 import Host from "../housing/Host";
 import Rating from "../housing/Rating";
-import "../../styles/Housing/_HouseTitle.scss"
+import "../../styles/components/_HouseTitle.scss"
 
 function HousingTitle() {
     return (

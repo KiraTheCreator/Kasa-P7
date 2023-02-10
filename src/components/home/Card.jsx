@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import housingdata from "../../datas/housingdata.json";
-import "../../styles/_Card.scss";
+import "../../styles/components/_Card.scss";
 
 function Card() {
   const data = housingdata

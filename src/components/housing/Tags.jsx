@@ -1,7 +1,7 @@
 import housingdata from "../../datas/housingdata.json";
 import React from "react";
 import { useParams } from "react-router-dom";
-import "../../styles/Housing/_Tags.scss"
+import "../../styles/components/_Tags.scss"
 
 function HousingTags() {
 const data = housingdata;

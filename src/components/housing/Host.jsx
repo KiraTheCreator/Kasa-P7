@@ -1,7 +1,7 @@
 import housingdata from "../../datas/housingdata.json";
 import React from "react";
 import { useParams } from "react-router-dom";
-import "../../styles/Housing/_Host.scss"
+import "../../styles/components/_Host.scss"
 
 function HousingHost() {
 
