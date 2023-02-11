@@ -1,8 +1,8 @@
 import React from "react";
 import BannerAbout from "../components/about/BannerAbout";
-import Header from "../components/Header";
+import Header from "../components/utils/Header";
 import Collapse from "../components/utils/Collapse";
-import Footer from "../components/Footer";
+import Footer from "../components/utils/Footer";
 import aboutdata from "../datas/aboutdata.json";
 import "../styles/utils/_Collapse.scss";
 import "../styles/pages/_About.scss"

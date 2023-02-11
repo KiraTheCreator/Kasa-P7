@@ -1,4 +1,5 @@
-@import "../_bases";
+@import "../bases";
+
 
 .footer {
     display: flex;
@@ -10,7 +11,7 @@
     font-family: $primary-font;
     width: auto;
     margin-left: -100px;
-    margin-right: -100px; 
+    margin-right: -100px;
     &__logo {
         margin: 25px 0 0 0;
     }
@@ -22,10 +23,12 @@
     }
 }
 
+
 @media screen and (max-width: 768px) {
     .footer {
         width: auto;
         margin: 0 -20px;
+        margin-top: FooterMarginTopResponsive();
         &__logo {
             margin: 0;
         }
