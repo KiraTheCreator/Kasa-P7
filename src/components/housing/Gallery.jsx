@@ -41,7 +41,9 @@ function Gallery() {
                 <button className="gallery__icon__btn" onClick={clickLeft}><img src={arrowLeft} alt="Fleche gauche"></img></button>
                 <button className="gallery__icon__btn" onClick={clickRight}><img src={arrowRight} alt="Fleche droite"></img></button>
             </div>
+            { housing.pictures.length > 1 &&
             <p className="gallery__text">{currentImageIndex +1}/{housing.pictures.length}</p>
+          }
         </div>
     )
 }
